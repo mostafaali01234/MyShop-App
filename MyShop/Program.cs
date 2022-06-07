@@ -14,10 +14,18 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
-//builder.Services.AddTransient<IUsersService, UsersService>();
-//builder.Services.AddTransient<IStatesService, StatesService>();
+//builder.Services.AddTransient<IAccountTypesService, AccountTypesService>();
+//builder.Services.AddTransient<ICartsService, CartsService>();
+//builder.Services.AddTransient<ICartItemsService, CartItemsService>();
+//builder.Services.AddTransient<ICategoriesService, CategoriesService>();
 //builder.Services.AddTransient<ICitiesService, CitiesService>();
 //builder.Services.AddTransient<IOrdersService, OrdersService>();
+//builder.Services.AddTransient<IOrderDetailsService, OrderDetailsService>();
+//builder.Services.AddTransient<IOrderTransactionsService, OrderTransactionsService>();
+//builder.Services.AddTransient<IProductsService, ProductsService>();
+//builder.Services.AddTransient<IProductReviewsService, ProductReviewsService>();
+//builder.Services.AddTransient<IStatesService, StatesService>();
+//builder.Services.AddTransient<IUsersService, UsersService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 

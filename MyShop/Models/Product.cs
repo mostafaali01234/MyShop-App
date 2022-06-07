@@ -14,6 +14,8 @@ namespace MyShop.Models
         public DateTime? Discount_End { get; set; }
         public DateTime Register_Date { get; set; }
         public DateTime? Last_Update { get; set; }
-       
+        public int? Category_Id { get; set; }
+        [ForeignKey("Category_Id")]
+        public Category Category { set; get; }
     }
 }

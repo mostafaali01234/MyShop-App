@@ -11,7 +11,9 @@ namespace MyShop.Models
         public string Phone { get; set; }
         public string UserName { get; set; }
         public string PasswordHash { get; set; }
-        public int type_Id { get; set; }
+        public int? type_Id { get; set; }
+        [ForeignKey("type_Id")]
+        public AccountTypes AccountTypes { set; get; }
         public DateTime Register_Date { get; set; }
         public DateTime? Last_Login { get; set; }
        
